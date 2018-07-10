@@ -46,50 +46,22 @@
         android:layout_height="5dp"
         android:layout_gravity="center"
         android:orientation="vertical" />
-        <LinearLayout
-            android:orientation="horizontal"
-            android:paddingLeft="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
+        
 
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/ic_email_black_24dp"/>
-            <TextView
-                android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:text="E-mail"/>
-        </LinearLayout>
-    <LinearLayout
-        android:paddingTop="25dp"
-        android:orientation="horizontal"
-        android:paddingLeft="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
 
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/ic_vpn_key_black_24dp"/>
-        <TextView
-            android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:text="Password"/>
-    </LinearLayout>
-    <Button
-        android:layout_gravity="center_horizontal"
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"/>
-    <com.google.android.gms.common.SignInButton
+        android:text="@string/google_sign_in"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/sign_in_button"
+        app:isDarkTheme="true"
+        />
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/google_sign_up"
+        android:layout_gravity="center_horizontal"
+        app:isDarkTheme="true"/>
+
 
 </LinearLayout>
